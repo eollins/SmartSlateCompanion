@@ -1,0 +1,21 @@
+# ninja log v5
+47	883	7348178989752209	SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+47	883	7348178989752209	SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+47	883	7348178989752209	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+47	883	7348178989752209	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+884	3495	7348179016969038	CMakeFiles/SmartSlateCompanion.dir/SmartSlateCompanion_autogen/mocs_compilation.cpp.obj	35737e96475751d9
+987	3498	7348179016969038	CMakeFiles/SmartSlateCompanion.dir/main.cpp.obj	acba69c5e39c525e
+1055	3499	7348179017009025	CMakeFiles/SmartSlateCompanion.dir/notetaker.cpp.obj	9f4a294b26e44e8d
+3499	5844	7348179040200304	SmartSlateCompanion.exe	7de7f0e0972aa8d5
+21	501	7348189122727842	SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+21	501	7348189122727842	SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+21	501	7348189122727842	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+21	501	7348189122727842	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+517	2464	7348189142303510	CMakeFiles/SmartSlateCompanion.dir/notetaker.cpp.obj	9f4a294b26e44e8d
+2464	3296	7348189149950756	SmartSlateCompanion.exe	7de7f0e0972aa8d5
+31	540	7348194304826016	SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+31	540	7348194304826016	SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+31	540	7348194304826016	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/timestamp	dcc8fa000b3b38e3
+31	540	7348194304826016	C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/mocs_compilation.cpp	dcc8fa000b3b38e3
+556	2787	7348194327260134	CMakeFiles/SmartSlateCompanion.dir/notetaker.cpp.obj	9f4a294b26e44e8d
+2788	3661	7348194335264004	SmartSlateCompanion.exe	7de7f0e0972aa8d5
