@@ -20,7 +20,7 @@ NoteTaker::NoteTaker(QWidget *parent)
     // Reconnection and monitoring timer
     reconnectTimer = new QTimer(this);
     connect(reconnectTimer, &QTimer::timeout, this, &NoteTaker::attemptConnection);
-    reconnectTimer->start(5000); // check every 5 seconds
+    reconnectTimer->start(1000); // check every 5 seconds
 
     heartbeatTimer = new QTimer(this);
     connect(heartbeatTimer, &QTimer::timeout, this, &NoteTaker::onTimeout);
@@ -29,7 +29,7 @@ NoteTaker::NoteTaker(QWidget *parent)
 void NoteTaker::attemptConnection() {
     if (socket->state() != QTcpSocket::ConnectedState) {
         qDebug() << "Attempting to connect...";
-        socket->connectToHost("192.168.4.1", 5001);
+        socket->connectToHost("192.168.4.1", 2024);
     }
 }
 
@@ -41,14 +41,14 @@ void NoteTaker::onConnected() {
     socket->write(msg.toUtf8());
     socket->flush();
 
-    heartbeatTimer->start(1000); // e.g., send heartbeat every 10 seconds
+    heartbeatTimer->start(2500); // e.g., send heartbeat every 10 seconds
 }
 
 void NoteTaker::onDisconnected() {
     qDebug() << "Disconnected.";
     ui->label_2->setText("Slate Lost");
     socket->close();
-    reconnectTimer->start(5000); // Re-attempt connection every 5 seconds
+    reconnectTimer->start(4000); // Re-attempt connection every 5 seconds
 }
 
 void NoteTaker::processSlateData() {
@@ -58,11 +58,17 @@ void NoteTaker::processSlateData() {
 
 void NoteTaker::onTimeout() {
     if (socket->state() == QTcpSocket::ConnectedState) {
+        if (unixTime() - lastTimestamp > 10) {
+            socket->close();
+            qDebug() << "Timeout";
+            return;
+        }
+
         QString msg = "Heartbeat";
         socket->write(msg.toUtf8());
         socket->flush();
 
-        qDebug() << "Sent heartbeat";
+        qDebug() << "Sent heartbeat " << std::to_string(unixTime() - lastTimestamp);
     } else {
         qDebug() << "Could not send heartbeat due to disconnected state.";
     }
@@ -78,6 +84,8 @@ int unixTime() {
 
 NoteTaker::~NoteTaker()
 {
+    socket->close();
+
     delete ui;
     delete socket;
 }
