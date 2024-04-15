@@ -2,6 +2,7 @@
 #define NOTETAKER_H
 
 #include <QMainWindow>
+#include <QTcpSocket>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +18,17 @@ public:
     NoteTaker(QWidget *parent = nullptr);
     ~NoteTaker();
 
+    void attemptConnection();
+    void onConnected();
+    void onDisconnected();
+    void processSlateData();
+    void onTimeout();
+
 private:
     Ui::NoteTaker *ui;
+    QTimer *reconnectTimer;
+    QTimer *heartbeatTimer;
+    QTcpSocket *socket;
+    int interval = 5000;
 };
 #endif // NOTETAKER_H

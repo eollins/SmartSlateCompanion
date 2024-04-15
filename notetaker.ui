@@ -48,7 +48,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Slate Not Connected</string>
+     <string>SmartSlate Not Detected</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
