@@ -35,7 +35,8 @@ void NoteTaker::attemptConnection() {
 
 void NoteTaker::onConnected() {
     qDebug() << "Established.";
-    ui->label_2->setText("Slate Connected");
+    ui->slate_connection_state->setText("Slate Connected");
+    setEnabled(true);
 
     QString msg = "Hello";
     socket->write(msg.toUtf8());
@@ -46,7 +47,8 @@ void NoteTaker::onConnected() {
 
 void NoteTaker::onDisconnected() {
     qDebug() << "Disconnected.";
-    ui->label_2->setText("Slate Lost");
+    ui->slate_connection_state->setText("Slate Lost");
+    setEnabled(false);
     socket->close();
     reconnectTimer->start(4000); // Re-attempt connection every 5 seconds
 }
@@ -80,6 +82,17 @@ int unixTime() {
     auto seconds = std::chrono::duration_cast<std::chrono::seconds>(duration).count();
 
     return seconds;
+}
+
+void NoteTaker::setEnabled(bool state) {
+    ui->roll_input->setEnabled(state);
+    ui->scene_input->setEnabled(state);
+    ui->take_input->setEnabled(state);
+    ui->notes_input->setEnabled(state);
+    ui->push_button->setEnabled(state);
+    ui->audio_input->setEnabled(state);
+    ui->device_input->setEnabled(state);
+    ui->confirm_button->setEnabled(state);
 }
 
 NoteTaker::~NoteTaker()

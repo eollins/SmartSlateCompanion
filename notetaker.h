@@ -23,6 +23,7 @@ public:
     void onDisconnected();
     void processSlateData();
     void onTimeout();
+    void setEnabled(bool state);
 
 private:
     Ui::NoteTaker *ui;
