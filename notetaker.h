@@ -25,6 +25,9 @@ public:
     void onTimeout();
     void setEnabled(bool state);
 
+private slots:
+    void on_push_button_clicked();
+
 private:
     Ui::NoteTaker *ui;
     QTimer *reconnectTimer;

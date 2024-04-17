@@ -102,3 +102,16 @@ NoteTaker::~NoteTaker()
     delete ui;
     delete socket;
 }
+
+void NoteTaker::on_push_button_clicked()
+{
+    QString msg = "{ "
+                  "\"command\": \"PushToSlate\", \"payload\": "
+                  "{ \"roll\": \"" + ui->roll_input->text() +
+                  "\", \"scene\": \"" + ui->scene_input->text() +
+                  "\", \"take\": \"" + ui->take_input->text() + "\"}";
+
+    socket->write(msg.toUtf8());
+    qDebug() << "Wrote slate payload of length " << msg.length();
+}
+
