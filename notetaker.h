@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTcpSocket>
+#include <QJsonDocument>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,15 +25,19 @@ public:
     void processSlateData();
     void onTimeout();
     void setEnabled(bool state);
+    void setTakeEnabled(bool state);
+    void setNotesEnabled(bool state);
 
 private slots:
     void on_push_button_clicked();
+    void on_reset_button_clicked();
 
 private:
     Ui::NoteTaker *ui;
     QTimer *reconnectTimer;
     QTimer *heartbeatTimer;
     QTcpSocket *socket;
+    QJsonDocument state;
     int interval = 5000;
 };
 #endif // NOTETAKER_H

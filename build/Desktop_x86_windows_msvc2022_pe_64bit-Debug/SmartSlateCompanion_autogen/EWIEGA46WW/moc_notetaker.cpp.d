@@ -1,4 +1,5 @@
 C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/EWIEGA46WW/moc_notetaker.cpp: C:/Users/ethan/Documents/SmartSlateCompanion/notetaker.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QJsonDocument \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -17,6 +18,9 @@ C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcalendar.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcborcommon.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcborvalue.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qchar.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcompare.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcompare_impl.h \
@@ -30,6 +34,7 @@ C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdebug.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qendian.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
@@ -47,9 +52,12 @@ C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterable.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterator.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qjsondocument.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qjsonvalue.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qline.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlist.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlocale.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlogging.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmalloc.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmap.h \
@@ -70,6 +78,7 @@ C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qrect.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qset.h \
@@ -111,7 +120,9 @@ C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypes.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qurl.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qutf8stringview.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/quuid.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvariant.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qversiontagging.h \

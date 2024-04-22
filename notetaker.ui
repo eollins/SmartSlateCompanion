@@ -66,7 +66,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Waiting For Take Info</string>
+     <string>Unknown</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -241,7 +241,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>130</x>
       <y>260</y>
       <width>191</width>
       <height>51</height>
@@ -422,10 +422,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </font>
     </property>
     <property name="text">
-     <string>Blackmagic 4K</string>
+     <string>DR-70D</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>260</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reset</string>
     </property>
    </widget>
   </widget>
