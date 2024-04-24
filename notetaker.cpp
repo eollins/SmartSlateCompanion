@@ -5,6 +5,7 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QJsonValue>
+#include <QStandardItemModel>
 #include <chrono>
 
 void establishConnection(QTcpSocket* socket);
@@ -85,6 +86,39 @@ void NoteTaker::processSlateData() {
                 ui->slate_take_state->setText("Waiting For Notes");
                 setNotesEnabled(true);
             }
+        }
+
+        if (obj.contains("notes") && obj.value("notes").toString() != currentNotes) {
+            QString notes = obj.value("notes").toString();
+            qDebug() << "Notes:" << notes;
+            QStandardItemModel *model = new QStandardItemModel();
+            QStringList rows = notes.split('\n');
+
+            for (const QString &rowData : rows) {
+                if (rowData != "") {
+                    QStringList columns = rowData.split('\t');
+                    QList<QStandardItem*> items;
+                    for (const QString &field : columns) {
+                        items.append(new QStandardItem(field));
+                    }
+                    model->appendRow(items);
+                }
+            }
+
+            QObject::connect(model, &QStandardItemModel::itemChanged, this, [this](QStandardItem *item) {
+                QString msg = "{\"command\": \"UpdateNotes\", \"payload\": { \"row\": \"" +
+                              QString::number(item->row()) +
+                              "\", \"column\": \"" +
+                              QString::number(item->column()) +
+                              "\", \"new\": \"" +
+                              item->text() + "\"}}";
+
+                socket->write(msg.toUtf8());
+                qDebug() << "Sent a notes update";
+            });
+
+            ui->notes_table->setModel(model);
+            currentNotes = notes;
         }
     }
 
@@ -169,5 +203,17 @@ void NoteTaker::on_reset_button_clicked()
     QString msg = "{ \"command\": \"ResetTake\" }";
     socket->write(msg.toUtf8());
     qDebug() << "Reset slate status";
+}
+
+
+void NoteTaker::on_confirm_button_clicked()
+{
+    QString msg = "{ \"command\": \"PushNotes\", \"payload\": { \"audio\": \"" + ui->audio_input->text() +
+                  "\", \"device\": \"" + ui->device_input->text() +
+                  "\", \"notes\": \"" + ui->notes_input->toPlainText() +
+                  "\"}}";
+
+    socket->write(msg.toUtf8());
+    qDebug() << "Sent notes payload";
 }
 
