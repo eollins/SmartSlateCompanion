@@ -1,4 +1,3 @@
-
 import socket
 import threading 
 import select 
@@ -10,11 +9,14 @@ import traceback
 import os
 from datetime import date 
 from sense_hat import SenseHat
+import spidev
+import binascii
+import serial
 
 # Establish a socket to listen on the static IP.
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-server.bind(('192.168.4.1', 2025))
+server.bind(('192.168.4.1', 2024))
 server.listen()
 sockets = []
 print("Now listening on IP 192.168.4.1")
@@ -22,7 +24,27 @@ print("Now listening on IP 192.168.4.1")
 # Global clap variable.
 clap = False
 #comment 
-debug = SenseHat()
+
+hatOn = False
+
+debug = None
+if hatOn:
+	debug = SenseHat()
+
+found = False
+dev = 0
+while not found:
+	try:
+		mbed = serial.Serial('/dev/ttyACM' + str(dev), 9600)
+		found = True
+	except:
+		print("Didn't find", str(dev) + ", trying other")
+		
+		if dev == 0:
+			dev = 1
+		else:
+			dev = 0
+print("Found mbed")
 
 # Initialize slate state.
 state = {
@@ -39,13 +61,18 @@ def check_for_claps():
 	global state
 
 	while True:
-		if len(debug.stick.get_events()) > 0:
+		try:
 			if state["state"] == "ready":
-				state["state"] = "clapped"
-				debug.clear((0, 0, 255))
-				for s in sockets:
-					s[0].send((json.dumps(state)).encode('utf-8'))
-				print("Sent clap")
+				print("Reading mbed")
+				msg = mbed.readline()
+				print("Received", msg)
+				if msg[-5:-1].decode() == "CLAP":
+					print("Clap detected.")
+					if state["state"] == "ready":
+						print("Set to clapped!")
+						state["state"] = "clapped"
+		except:
+			print("mbed not found")
 
 # Closes all sockets once interrupted.
 def signal_handler(sig, frame):
@@ -65,14 +92,15 @@ def establish_connection(sock, addr):
 	global state
 
 	connected = True
-	debug.clear((0, 255, 0))
+	if hatOn:
+		debug.clear((0, 255, 0))
 	
 	while connected:
-		if state['state'] == "ready":
+		if state['state'] == "ready" and hatOn:
 			debug.clear((0, 255, 0))
-		elif state['state'] == "clapped":
+		elif state['state'] == "clapped" and hatOn:
 			debug.clear((0, 0, 255))
-		elif state['state'] == "init":
+		elif state['state'] == "init" and hatOn:
 			debug.clear((255, 255, 0))
 
 		try:
@@ -103,6 +131,14 @@ def establish_connection(sock, addr):
                         			#ulcd displays roll, scene, and take
 						state["state"] = "ready"
 
+						try:
+							m = "@R" + state["roll"] + "~S" + state["scene"] + "~T" + state["take"] + "~"
+							print(m)
+							mbed.write((m).encode('utf-8'))
+							print("Sent to displays")
+						except:
+							print("mbed was gone")
+
 					elif json_dict["command"] == "PushNotes":
 						if state["state"] == "clapped":
 							state["state"] = "init"
@@ -129,6 +165,12 @@ def establish_connection(sock, addr):
 							file.close()
 							print(json_dict["payload"])
 							print("Took notes", json_dict["payload"])
+			
+							try:
+								mbed.write(("@").encode('utf-8'))
+								print("Sent reset")
+							except:
+								print("mbed was gone")
 
 					elif json_dict["command"] == "ResetTake":
 						if state["state"] != "init":
@@ -167,9 +209,10 @@ def establish_connection(sock, addr):
 					state["notes"] = "No note file"
 
 				sock.send((json.dumps(state)).encode('utf-8'))
-					
+
 		except Exception as e:
-			debug.clear((255, 0, 0))
+			if hatOn:
+				debug.clear((255, 0, 0))
 			traceback.print_exc()
 			print("Lost", addr, e)
 			sock.close()

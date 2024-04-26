@@ -34,7 +34,7 @@ NoteTaker::NoteTaker(QWidget *parent)
 void NoteTaker::attemptConnection() {
     if (socket->state() != QTcpSocket::ConnectedState) {
         qDebug() << "Attempting to connect...";
-        socket->connectToHost("192.168.4.1", 2025);
+        socket->connectToHost("192.168.4.1", 2024);
     }
 }
 
