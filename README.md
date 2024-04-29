@@ -1,7 +1,7 @@
 For our 4180 project we decided to make our own version of an IOT enabled slate used for film productions. These "Smart Slates", as we have called them, have X primary functions.
 They are:
 
-1) Display the Roll, Scene, and Take number.
+1) Display the Roll, Scene, and Take number. /n
 2) Keep track of the current time relative to the start of the shoot.
 3) Keep track of the timestamp of the start of each scene.
 4) Make it easy for the Assistant Director(will now be referenced as AD) to take notes on the current scene and save them for use while editing.
