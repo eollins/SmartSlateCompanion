@@ -44,8 +44,9 @@ Print out the two .stl files in the repository and fit components as shown. Secu
 [SmartSlateBody](smartslatebody.stl)
 [SmartSlateHand](smartslateslapper.stl)
 
+![Slate Front](https://github.com/eollins/SmartSlateCompanion/assets/91165948/4287fa16-3772-4246-b1cf-44e2e2c96084)
+![Slate Back](https://github.com/eollins/SmartSlateCompanion/assets/91165948/dc97f9d7-b2ea-45a1-a74e-e8c866eb5b9c)
 
-INSERT PICTURES OF SLATE FRONT AND BACK
 
 Software
 -
