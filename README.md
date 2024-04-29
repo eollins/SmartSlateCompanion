@@ -34,14 +34,17 @@ List of Parts:
 * Jumper Wires
 * Electrical Tape
 
-Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately.
+Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately. The 7 Segment display circuitry along with the CD4511BE are repeated 8 times for each individual part.
 
 ![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/a9c38e4f-9ac8-4668-8196-3a34d50bfc50)
 
 
 Print out the two .stl files in the repository and fit components as shown. Secure parts with tape as neccessary.
+[SmartSlateBody](smartslatebody.stl)
+[SmartSlateHand](smartslateslapper.stl)
 
-INSERT PICTURE
+
+INSERT PICTURES OF SLATE FRONT AND BACK
 
 Software
 -
