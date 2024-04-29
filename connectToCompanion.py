@@ -145,7 +145,7 @@ def establish_connection(sock, addr):
                             				#payload contains audio, device, and notes
 							notes_to_write = json_dict["payload"]
 							d = date.today()
-							file_name = d.strftime("%d_%m_%y.txt")
+							file_name = "/home/pi/" + d.strftime("%d_%m_%y.txt")
 
 							if not os.path.exists(file_name):
 								file = open(file_name, 'x')
@@ -192,14 +192,14 @@ def establish_connection(sock, addr):
 						newNotes = "\n".join(lines)
 
 						d = date.today()
-						file = d.strftime("%d_%m_%y.txt")
+						file = "/home/pi/" + d.strftime("%d_%m_%y.txt")
 						f = open(file, "w")
 						f.write(newNotes)
 						f.close()
 						state["notes"] = newNotes
 
 				d = date.today()
-				file = d.strftime("%d_%m_%y.txt")
+				file = "/home/pi/" + d.strftime("%d_%m_%y.txt")
 				if os.path.exists(file):
 					f = open(file, "r")
 					notes = f.read()
