@@ -29,6 +29,7 @@ List of Parts:
 * 1x Magnet Sensor
 * 3x uLCD
 * 8x CD4511BE
+* 56x 330 Ohm Resistors
 * ABS Filament
 * Jumper Wires
 * Electrical Tape
