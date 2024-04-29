@@ -1,5 +1,7 @@
 Introduction
 --
+Team Members: Ethan Ollins, Jack Cochran, Alex Peng
+
 For our 4180 project we decided to make our own version of an IOT enabled slate used for film productions. These "Smart Slates", as we have called them, have 6 primary functions.
 They are:
 
