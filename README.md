@@ -21,7 +21,6 @@ For the purposes of designing this project we broke the problem up into 3 segmen
 
 Electrical and Hardware Design
 -
-Block Diagram []
 
 List of Parts:
 * Raspberry Pi 3b+
@@ -34,8 +33,16 @@ List of Parts:
 * Jumper Wires
 * Electrical Tape
 
+Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately.
+
+Block Diagram []
+
+
+
+Print out the STL in the repository and fit components as shown. Secure parts with tape as neccessary.
 INSERT PICTURE
 
 Software
 -
+
 
