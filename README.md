@@ -36,8 +36,7 @@ List of Parts:
 
 Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately.
 
-Block Diagram []
-
+![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/a9c38e4f-9ac8-4668-8196-3a34d50bfc50)
 
 
 Print out the two .stl files in the repository and fit components as shown. Secure parts with tape as neccessary.
