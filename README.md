@@ -39,7 +39,8 @@ Block Diagram []
 
 
 
-Print out the STL in the repository and fit components as shown. Secure parts with tape as neccessary.
+Print out the two .stl files in the repository and fit components as shown. Secure parts with tape as neccessary.
+
 INSERT PICTURE
 
 Software
