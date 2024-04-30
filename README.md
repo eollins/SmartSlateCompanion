@@ -41,6 +41,8 @@ Connect the parts as dictated in the wiring diagram, pin numbers are labeled app
 ![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/a9c38e4f-9ac8-4668-8196-3a34d50bfc50)
 
 
+The ULCD's display the Roll, Scene, and Take number. The 7 segment displays displays the time and when the magnet sensor is opened and closed the time is stopped and recorded in the companion software.
+
 Print out the two .stl files in the repository and fit components as shown. Secure parts with tape as neccessary.
 
 [SmartSlateBody](smartslatebody.stl)
