@@ -19,7 +19,8 @@ They are:
 
 For the purposes of designing this project we broke the problem up into 3 segments: detecting the clap and displaying relevant info, controling the slate and inputting relevant info, and the means with which the AD interfaces with the Smart Slate™️. To accomplish this we decided to not only create a Smart Slate™️ but also a desktop companion app that the AD can use to take notes and interface with the slate.
 
-[//-- Video Demo --//](https://youtu.be/_YN7Nneg3RY)
+<a href="http://youtu.be/_YN7Nneg3RY" target="_blank">//-- Video Demo --//</a>
+
 
 Electrical and Hardware Design
 -
