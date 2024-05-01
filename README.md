@@ -69,4 +69,4 @@ To successfully recreate this project you will need to do the following 5 things
 
 Setting up a Raspberry PI as an access point
 --
-
+The Raspberry Pi, running the Raspbian OS, was configured to serve as a wireless access point. Though it is not connected to a router and therefore does not have access to the Internet, this provides the benefit of allowing hosts, such as a user's laptop, to connect to the Pi wirelessly and communicate via TCP sockets. Through the hostapd and dnsmasq libraries, the Raspberry Pi serves as an access point using its wireless connectivity interface and uses the fixed local IP address of 192.168.4.1. Communication between a user running the SmartSlateCompanion app and the slate itself takes place when the user connects to the SmartSlate network, and the companion application automatically establishes a TCP connection. The Raspberry Pi then serves as a middleman between the user and the visible elements of the slate, which are controlled by an internal mbed.
