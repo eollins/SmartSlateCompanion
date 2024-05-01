@@ -1,4 +1,4 @@
-C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/EWIEGA46WW/moc_notetaker.cpp: C:/Users/ethan/Documents/SmartSlateCompanion/notetaker.h \
+C:/Users/ethan/Documents/SmartSlateCompanion/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/SmartSlateCompanion_autogen/EWIEGA46WW/moc_notetaker.cpp: C:/Users/ethan/Documents/SmartSlateCompanion/gui_code/notetaker.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/QFile \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/QJsonDocument \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \

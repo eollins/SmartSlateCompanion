@@ -315,7 +315,7 @@ SmartSlateCompanion_BINARY_DIR:STATIC=C:/Users/ethan/Documents/SmartSlateCompani
 SmartSlateCompanion_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-SmartSlateCompanion_SOURCE_DIR:STATIC=C:/Users/ethan/Documents/SmartSlateCompanion
+SmartSlateCompanion_SOURCE_DIR:STATIC=C:/Users/ethan/Documents/SmartSlateCompanion/gui_code
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
@@ -397,7 +397,7 @@ CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
 CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/ethan/Documents/SmartSlateCompanion
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/ethan/Documents/SmartSlateCompanion/gui_code
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
