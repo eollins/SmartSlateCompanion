@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QTcpSocket>
 #include <QJsonDocument>
+#include <QMessageBox>
+#include <QFile>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -31,8 +34,9 @@ public:
 private slots:
     void on_push_button_clicked();
     void on_reset_button_clicked();
-
     void on_confirm_button_clicked();
+    void on_clear_button_clicked();
+    void on_download_button_clicked();
 
 private:
     Ui::NoteTaker *ui;
