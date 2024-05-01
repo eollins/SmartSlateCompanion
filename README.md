@@ -54,6 +54,19 @@ Print out the two .stl files in the repository and fit components as shown. Secu
 
 
 Software
--
+--
+To successfully recreate this project you will need to do the following 5 things.
 
+1) Clone this github repo
+
+2) Set up the raspberry pi to be an access point for a LAN
+
+3) Take the contents of the folder named raspberry pi and copy them onto your raspberry pi
+
+4) Take the contents of the folder named mbed and copy them onto your mbed
+
+5) Download QT Creator and then copy the contents of the folder named gui into a new QT project and compile
+
+Setting up a Raspberry PI as an access point
+--
 
