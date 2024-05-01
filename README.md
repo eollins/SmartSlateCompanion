@@ -60,9 +60,9 @@ To successfully recreate this project you will need to do the following 5 things
 
 1) Clone this github repo
 
-2) Set up the raspberry pi to be an access point for a LAN
+2) Set up the raspberry pi to be an access point for a LAN, ensuring it uses a static IP address of 192.168.4.1
 
-3) Take the contents of the folder named raspberry pi and copy them onto your raspberry pi
+3) Take the contents of the folder named raspberry pi and copy them onto your raspberry pi, setting the connectToCompanion.py script to run as a background service
 
 4) Take the contents of the folder named mbed and copy them onto your mbed
 
