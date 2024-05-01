@@ -39,7 +39,7 @@ List of Parts:
 
 Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately. The 7 Segment display circuitry along with the CD4511BE are repeated 8 times for each individual part. Each resistor in the diagram is a 330 Ohm resistor for each of the led segments in the 7 segment displays.
 
-![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/4083f7fb-d806-48db-a4f1-9b5dd97c789d)
+![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/37397345-6701-40be-8acd-53e69f9c927e)
 
 
 
