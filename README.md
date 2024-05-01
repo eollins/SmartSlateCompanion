@@ -1,5 +1,8 @@
 Introduction
 --
+
+[Smart Slate Github Repo](https://github.com/eollins/SmartSlateCompanion/tree/master)
+
 Team Members: Ethan Ollins, Jack Cochran, Alex Peng
 
 For our 4180 project we decided to make our own version of an IOT enabled slate used for film productions. These "Smart Slates", as we have called them, have 6 primary functions.
@@ -45,10 +48,7 @@ Connect the parts as dictated in the wiring diagram, pin numbers are labeled app
 
 The ULCD's display the Roll, Scene, and Take number. The 7 segment displays displays the time and when the magnet sensor is opened and closed the time is stopped and recorded in the companion software.
 
-Print out the two .stl files in the repository and fit components as shown. Secure parts with tape as neccessary.
-
-[SmartSlateBody](smartslatebody.stl)
-[SmartSlateHand](smartslateslapper.stl)
+Print out the two .stl files in the repository under /3D models and fit components as shown. Secure parts with tape as neccessary.
 
 ![Slate Front](https://github.com/eollins/SmartSlateCompanion/assets/91165948/4287fa16-3772-4246-b1cf-44e2e2c96084)
 ![Slate Back](https://github.com/eollins/SmartSlateCompanion/assets/91165948/dc97f9d7-b2ea-45a1-a74e-e8c866eb5b9c)
