@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ethan/Documents/SmartSlateCompanion
+# Install script for directory: C:/Users/ethan/Documents/SmartSlateCompanion/gui_code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

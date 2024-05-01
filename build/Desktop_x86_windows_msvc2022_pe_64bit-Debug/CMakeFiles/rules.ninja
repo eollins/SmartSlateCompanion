@@ -47,7 +47,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Qt\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ethan\Documents\SmartSlateCompanion -BC:\Users\ethan\Documents\SmartSlateCompanion\build\Desktop_x86_windows_msvc2022_pe_64bit-Debug
+  command = C:\Qt\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ethan\Documents\SmartSlateCompanion\gui_code -BC:\Users\ethan\Documents\SmartSlateCompanion\build\Desktop_x86_windows_msvc2022_pe_64bit-Debug
   description = Re-running CMake...
   generator = 1
 
