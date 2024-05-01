@@ -39,7 +39,8 @@ List of Parts:
 
 Connect the parts as dictated in the wiring diagram, pin numbers are labeled appropriately. The 7 Segment display circuitry along with the CD4511BE are repeated 8 times for each individual part. Each resistor in the diagram is a 330 Ohm resistor for each of the led segments in the 7 segment displays.
 
-![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/a9c38e4f-9ac8-4668-8196-3a34d50bfc50)
+![SmartSlate](https://github.com/eollins/SmartSlateCompanion/assets/91165948/4083f7fb-d806-48db-a4f1-9b5dd97c789d)
+
 
 
 The ULCD's display the Roll, Scene, and Take number. The 7 segment displays displays the time and when the magnet sensor is opened and closed the time is stopped and recorded in the companion software.
