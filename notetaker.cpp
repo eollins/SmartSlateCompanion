@@ -217,3 +217,34 @@ void NoteTaker::on_confirm_button_clicked()
     qDebug() << "Sent notes payload";
 }
 
+void NoteTaker::on_clear_button_clicked()
+{
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Confirm");
+    msgBox.setText("Are you sure you want to clear the notes? All information will be lost.");
+    msgBox.setIcon(QMessageBox::Question);
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No);
+
+    if (msgBox.exec() == QMessageBox::Yes) {
+        QString msg = "{ \"command\": \"ClearNotes\", \"payload\": {} }";
+        socket->write(msg.toUtf8());
+        qDebug() << "Sent clear notes";
+    }
+}
+
+
+void NoteTaker::on_download_button_clicked()
+{
+    QString path = QFileDialog::getSaveFileName(this, "Save Notes", QString(), "Tab-separated value files (*.tsv)");
+    if (path.isEmpty()) {
+        return;
+    }
+
+    QFile file(path);
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream out_stream(&file);
+    out_stream << currentNotes;
+    file.close();
+}
+

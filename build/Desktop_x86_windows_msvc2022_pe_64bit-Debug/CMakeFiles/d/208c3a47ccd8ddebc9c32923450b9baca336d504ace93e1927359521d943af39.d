@@ -1,4 +1,5 @@
 SmartSlateCompanion_autogen/timestamp: \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QFile \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/QJsonDocument \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
@@ -36,8 +37,12 @@ SmartSlateCompanion_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatastream.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdir.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qendian.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfile.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfiledevice.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfileinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfloat16.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qforeach.h \
@@ -110,6 +115,7 @@ SmartSlateCompanion_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtimezone.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtpreprocessorsupport.h \
@@ -160,8 +166,14 @@ SmartSlateCompanion_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMessageBox \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialogbuttonbox.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
